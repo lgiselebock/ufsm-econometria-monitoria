@@ -51,6 +51,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - Playlist [Mastering Econometrics with Joshua Angrist](https://www.youtube.com/playlist?list=PL-uRhZ_p-BM5ovNRg-G6hDib27OCvcyW8){target="_blank"} - Marginal Revolution University
 
+- Playlist [Estatística Aplicada à Vida Real](https://www.youtube.com/c/Fernandaperes){target="_blank"} - Fernanda Peres
+
 ### Materiais para aprender a Linguagem R
 
 - [A very short introduction to Tidyverse](https://dominicroye.github.io/en/2020/a-very-short-introduction-to-tidyverse/){target="_blank"} - Dominic Royé
@@ -65,9 +67,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - [R for Data Science](https://r4ds.had.co.nz/){target="_blank"} -  Hadley Wickham and Garrett Grolemund
 
+- [R para Ciência de Dados](https://cienciadedatos.github.io/pt-r4ds/){target="_blank"} -  Hadley Wickham and Garrett Grolemund (*R for Data Science* traduzido para o português)
+
 - [R: Uma Introdução para economistas](https://danmrc.github.io/R-para-Economistas/){target="_blank"} - Daniel Coutinho
 
-
+<br>
 
 Uma das vantagens de se utilizar o **R** é a existência de pacotes criados para trabalhar diretamente com os dados brasileiros. Por exemplo:
 
@@ -84,6 +88,8 @@ Uma das vantagens de se utilizar o **R** é a existência de pacotes criados par
 - Pacote [geobr](https://cran.r-project.org/web/packages/geobr/vignettes/intro_to_geobr.html){target="_blank"}: mapas e outros dados espaciais brasileiros - Rafael H. M. Pereira e Caio Nogueira Goncalves
 
 - Um [exemplo](http://regisely.com/blog/mercado-de-trabalho-covid/){target="_blank"} do uso dos dados da PNAD Covid - Régis Ely
+
+<br>
 
 Base dos Dados Mais (BD+): um repositório integrado de dados organizados e disponíveis na nuvem dentro da ferramenta BigQuery, da Google. Com algumas linhas de código, bases de dados que levariam dias para baixar e tratar podem ser acessadas dentro de alguns minutos.  - João Carabetta, Ricardo Dahis, Fred Israel e Fernanda  Scovino
 
