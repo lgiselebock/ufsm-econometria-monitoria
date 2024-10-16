@@ -4,7 +4,7 @@ library(tidyverse)
 
 # importa a base  ---------------------------------------------------------
 
-pinguins <- read_csv("dados/pinguins/pinguins.csv")
+pinguins <- read_csv("aula-r/dados/pinguins/pinguins.csv")
 
 
 # Camadas dos gráficos ----------------------------------------------------
@@ -401,7 +401,7 @@ pinguins %>%
 # importa a base ----------------------------------------------------------
 
 # importa a base do ideb para o ensino fundamental
-ideb_fundamental <- read_csv("dados/educacionais/ideb_fundamental.csv")
+ideb_fundamental <- read_csv("aula-r/dados/educacionais/ideb_fundamental.csv")
 
 # download dos dados da malha dos municipios brasileiros
 mapa_muni <- geobr::read_municipality(year = 2020)

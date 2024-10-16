@@ -7,27 +7,27 @@ library(tidyverse)
 ### importa a base de dados
 
 ideb_fund <- read_csv(
-  "dados/educacionais/ideb_fundamental.csv",
+  "aula-r/dados/educacionais/ideb_fundamental.csv",
   col_types = cols(id_municipio = col_character(), ano = col_integer())
 )
 
 ideb_medio <- read_csv(
-  "dados/educacionais/ideb_medio.csv",
+  "aula-r/dados/educacionais/ideb_medio.csv",
   col_types = cols(id_municipio = col_character(), ano = col_integer())
 )
 
 indic_fund <- read_csv(
-  "dados/educacionais/indicadores_fundamental.csv",
+  "aula-r/dados/educacionais/indicadores_fundamental.csv",
   col_types = cols(id_municipio = col_character(), ano = col_integer())
 )
 
 indic_medio <- read_csv(
-  "dados/educacionais/indicadores_medio.csv",
+  "aula-r/dados/educacionais/indicadores_medio.csv",
   col_types = cols(id_municipio = col_character(), ano = col_integer())
 )
 
 pib_pop <- read_csv(
-  "dados/educacionais/pib_pc.csv",
+  "aula-r/dados/educacionais/pib_pc.csv",
   col_types = cols(id_municipio = col_character(), ano = col_integer())
 )
 
@@ -817,3 +817,4 @@ ggplot(wage) +
   geom_point(aes(color = exper, size = expersq), alpha = 0.7) +
   scale_color_viridis_c() +
   geom_smooth(method = "lm", se = FALSE)
+

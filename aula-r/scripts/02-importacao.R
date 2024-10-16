@@ -52,7 +52,7 @@ class(as_tibble(airquality))
 # read_rds()
 
 # .csv - separado por vírgula
-pinguins_csv <- read_csv("dados/pinguins/pinguins.csv")
+pinguins_csv <- read_csv("aula-r/dados/pinguins/pinguins.csv")
 
 pinguins_csv
 
@@ -66,15 +66,15 @@ pinguins_csv
 
 # Portanto, alguns .csv utilizam ; na separação entre colunas
 # .csv - separado por ponto-e-vírgula
-pinguins_csv2 <- read_csv2("dados/pinguins/pinguins2.csv")
+pinguins_csv2 <- read_csv2("aula-r/dados/pinguins/pinguins2.csv")
 
 
 # .txt - separado por tabulação (tecla TAB)
-pinguins_txt <- read_delim("dados/pinguins/pinguins.txt", delim = "\t")
+pinguins_txt <- read_delim("aula-r/dados/pinguins/pinguins.txt", delim = "\t")
 
 # a função read_delim() funciona para qualquer tipo de separador:
-pinguins_delim <- read_delim("dados/pinguins/pinguins.csv", delim = ",")
-pinguins_delim2 <- read_delim("dados/pinguins/pinguins2.csv", delim = ";")
+pinguins_delim <- read_delim("aula-r/dados/pinguins/pinguins.csv", delim = ",")
+pinguins_delim2 <- read_delim("aula-r/dados/pinguins/pinguins2.csv", delim = ";")
 
 # importando dados direto da internet
 titanic_csv_url <- read_csv(
@@ -85,17 +85,17 @@ titanic_csv_url <- read_csv(
 # Interface point and click do RStudio também é útil!
 
 
-imdb2 <- read_delim("dados/imdb2.csv", delim = ";",
+imdb2 <- read_delim("aula-r/dados/imdb2.csv", delim = ";",
                     escape_double = FALSE, trim_ws = TRUE)
 View(imdb2)
 
-
+"aula-r/dados/imdb2.csv"
 
 # Lendo arquivos do Excel (.xlsx ou .xls) ---------------------------------
 
 library(readxl)
 
-pinguins_xlsx <- read_excel("dados/pinguins/pinguins.xlsx")
+pinguins_xlsx <- read_excel("aula-r/dados/pinguins/pinguins.xlsx")
 
 ################################################################################
 # Argumentos úteis:
@@ -117,16 +117,16 @@ pinguins_xlsx <- read_excel("dados/pinguins/pinguins.xlsx")
 # São funções que iniciam com 'write'
 
 # .csv - vírgula
-write_csv(pinguins, "dados/pinguins/pinguins.csv")
+write_csv(pinguins, "aula-r/dados/pinguins/pinguins.csv")
 
 # .csv - ponto-e-vírgula
-write_csv2(pinguins, "dados/pinguins/pinguins2.csv")
+write_csv2(pinguins, "aula-r/dados/pinguins/pinguins2.csv")
 
 # .txt - tabulação
-write_delim(pinguins, "dados/pinguins/pinguins.txt", delim = "\t")
+write_delim(pinguins, "aula-r/dados/pinguins/pinguins.txt", delim = "\t")
 
 # .xlsx ou .xls - excel
-writexl::write_xlsx(pinguins, "dados/pinguins/pinguins.xlsx")
+writexl::write_xlsx(pinguins, "aula-r/dados/pinguins/pinguins.xlsx")
 
 
 

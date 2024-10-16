@@ -7,8 +7,8 @@ library(tidyverse)
 
 # Importando as bases -----------------------------------------------------
 
-pinguins <- read_csv("dados/pinguins/pinguins.csv")
-pinguins_raw <- read_csv("dados/pinguins/pinguins_raw.csv")
+pinguins <- read_csv("aula-r/dados/pinguins/pinguins.csv")
+pinguins_raw <- read_csv("aula-r/dados/pinguins/pinguins_raw.csv")
 
 head(pinguins)
 head(pinguins_raw)
@@ -65,8 +65,6 @@ pinguins %>%
   select(species, body_mass_g) %>%
   arrange(body_mass_g)
 ##################################################################
-
-
 
 # FILTER()
 # filtra os valores (linhas) de uma coluna
@@ -345,3 +343,4 @@ pivot_wider(
   names_from = Species,
   values_from = `Body Mass (g)`
 )
+
